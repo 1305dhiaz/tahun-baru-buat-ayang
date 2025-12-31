@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selamat Tahun Baru, Sayang</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background: white;
+      max-width: 720px;
+      padding: 30px 35px;
+      border-radius: 18px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      text-align: center;
+    }
+
+    h1 {
+      color: #ff5f7e;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #444;
+      line-height: 1.8;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    .photo {
+      width: 100%;
+      max-width: 320px;
+      border-radius: 16px;
+      margin: 20px auto 25px;
+      display: block;
+      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    }
+
+    .signature {
+      margin-top: 30px;
+      font-weight: bold;
+      color: #ff5f7e;
+    }
+
+    .play {
+      margin-top: 25px;
+      color: #ff5f7e;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Selamat Tahun Baru, Sayang 🤍</h1>
+
+    <img src="./foto.jpeg" alt="Foto Sayang" class="photo">
+
+    <p>
+      Nggak kerasa kita sudah sampai di titik ini. Makasih banget karena kamu masih di sini, masih mau jalan bareng aku, meskipun tahun kemarin nggak selalu mudah. Kamu itu salah satu hal terbaik yang aku punya, dan aku bersyukur banget bisa kenal kamu.
+    </p>
+
+    <p>
+      Di tahun yang baru ini, aku pengin jadi versi diri aku yang lebih baik dari sekarang, buat diri aku sendiri dan juga buat kamu. Aku bakal terus belajar, terus usaha, dan semoga kamu bisa lihat perubahan itu pelan-pelan. Tolong selalu doain aku ya, semoga apa yang aku mau, dan apa yang kita mau, bisa terwujud di tahun yang baru ini.
+    </p>
+
+    <p>
+      Makasih sudah jadi orang yang bikin aku ngerasa pulang. Semoga tahun ini lebih banyak senyum, tawa, dan cerita indah buat kita.
+    </p>
+
+    <div class="play" onclick="playMusic()">▶ Putar Lagu Kita</div>
+
+    <div class="signature">— Dari aku yang sayang kamu</div>
+
+    <audio id="music" loop>
+      <source src="musik.mp3" type="audio/mpeg">
+      Browser kamu tidak mendukung audio.
+    </audio>
+  </div>
+
+  <script>
+    function playMusic() {
+      document.getElementById('music').play();
+    }
+  </script>
+
+</body>
+</html>
